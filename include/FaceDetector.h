@@ -1,10 +1,10 @@
 #ifndef VISUALS_FACEDETECTOR_H
 #define VISUALS_FACEDETECTOR_H
-#include <opencv2/dnn.hpp>
+#include <opencv4/opencv2/dnn.hpp>
 using namespace std;
 using namespace cv;
 using namespace dnn;
-// C:\Users\SATVIK66\FDT\CMakeLists.txt
+
 class FaceDetector
 {
 public:
