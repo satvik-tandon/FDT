@@ -35,11 +35,29 @@ Check the OpenCV version using bindings for different programming languages to v
 ```
 python3 -c "import cv2; print(cv2.__version__)"
 ```
-Lets dive into the code:
 
-This line sets the video source to the default webcam, which OpenCV can easily capture. If camera isn't found, the function exits.
+**Building the Source Code**
+
+Step 1: Clone the repository in the */root* directory and create a build folder
 ```
-VideoCapture video_capture;
-    if (!video_capture.open(1))
-        return 0;
+git clone https://github.com/satvik-tandon/FDT.git
+cd FDT
+mkdir -p build && cd build
 ```
+Step 2: Run cmake and compile all the files
+```
+cmake ..
+make
+```
+Step  3: A executible will be created. Run it.
+```
+./fdt
+```
+
+
+I have also attached a script file for running the full project from scratch. You may run it as follows in the */root*:
+```
+bash fdt.sh
+```
+
+**THANKS FOR READING. :)**
