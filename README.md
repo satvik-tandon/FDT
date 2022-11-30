@@ -53,7 +53,7 @@ Step 2: Run cmake and compile all the files
 cmake ..
 make
 ```
-Step  3: A executible will be created. Run it.
+Step  3: An executible will be created. Run it.
 ```
 ./fdt
 ```
