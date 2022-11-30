@@ -7,7 +7,7 @@ using namespace dnn;
 int main()
 {
     VideoCapture video_capture;
-    if (!video_capture.open(0))
+    if (!video_capture.open(1))
         return 0;
 
     FaceDetector face_detector;
