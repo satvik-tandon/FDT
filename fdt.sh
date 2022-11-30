@@ -10,17 +10,14 @@ git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
 cd /root/opencv_build/opencv
 mkdir -p build && cd build
-echo "hello"
 cmake -D CMAKE_BUILD_TYPE=RELEASE CMAKE_INSTALL_PREFIX=/usr/local INSTALL_C_EXAMPLES=ON INSTALL_PYTHON_EXAMPLES=ON OPENCV_GENERATE_PKGCONFIG=ON OPENCV_EXTRA_MODULES_PATH=~/opencv_build/opencv_contrib/modules BUILD_EXAMPLES=ON ..
-make -j$(nproc)
+make -j$(nproc) 
 sudo make install
-
+echo "Hello"
 #setting up face detection tool
+cd
 git clone https://github.com/satvik-tandon/FDT.git
 cd /root/FDT
 mkdir -p build && cd build
 cmake ..
 make
-
-echo"INSTALLATION COMPLETED.NOW RUNNING FACE DETECTION TOOL"
-./fdt
