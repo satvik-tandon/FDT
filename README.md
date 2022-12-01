@@ -89,16 +89,16 @@ It is a user-defined class which uses the `cv::dnn::Net` class and load weights 
 This class allows to create and manipulate comprehensive artificial neural networks.Neural network is presented as directed acyclic graph (DAG), where vertices are Layer instances, and edges specify relationships between layers inputs and outputs.Each network layer has unique integer id and unique string name inside its network.
 
 ### 5. imshow()
-imshow() method is used to display an image in a window. The window automatically fits the image size.
+`imshow()` method is used to display an image in a window. The window automatically fits the image size.
 
 ### 6. waitkey()
-waitkey() function allows users to display a window for given milliseconds or until any key is pressed. It takes time in milliseconds as a parameter and waits for the given time to destroy the window, if 0 is passed in the argument it waits till any key is pressed.
+`waitkey()` function allows users to display a window for given milliseconds or until any key is pressed. It takes time in milliseconds as a parameter and waits for the given time to destroy the window, if 0 is passed in the argument it waits till any key is pressed.
 
 ### 7. destroyAllWindows()
-destroyAllWindows() function allows users to destroy or close all windows at any time after exiting the script. If you have multiple windows open at the same time and you want to close then you would use this function. It doesn’t take any parameters and doesn’t return anything.
+`destroyAllWindows()` function allows users to destroy or close all windows at any time after exiting the script. If you have multiple windows open at the same time and you want to close then you would use this function. It doesn’t take any parameters and doesn’t return anything.
 
 ### 8. readNetFromCaffe()
-Reads a network model stored in Caffe framework's format.
+`readNetFromCaffe()` reads a network model stored in Caffe framework's format.
 
 
 
