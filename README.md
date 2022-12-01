@@ -15,7 +15,7 @@ In this project I have built a model which detects the face in video from webcam
 I have used parts of OpenCV and its OpenCV_contrib module. The most convenient way is by building OpenCV from source. I have used OpenCV version 4.2.0 on Ubuntu 22.04.
 
 Step 1. Install OpenCV Dependencies and Build Tools
-```shell
+```
 sudo apt install build-essential cmake git pkg-config libgtk-3-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libxvidcore-dev libx264-dev libjpeg-dev libpng-dev libtiff-dev gfortran openexr libatlas-base-dev python3-dev python3-numpy libtbb2 libtbb-dev libdc1394-dev libopenexr-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev -y
 ```
 Step 2. Clone OpenCV and Its Repositories
@@ -73,10 +73,10 @@ bash fdt.sh
 ## Classes and Methods Used 
 
 ### 1. VideoCapture 
-Class for video capturing from video files, image sequences or cameras.The class provides C++ API for capturing video from cameras or for reading video files and image sequences.
+`VideoCapture` class is used for capturing video from video files, image sequences or cameras.The class provides C++ API for capturing video from cameras or for reading video files and image sequences.
 
 ### 2. Mat
-The class Mat represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i0,...,iM.dims−1), where 0≤ik<M.size[k], is computed as:
+The class `Mat` represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i<sub>0</sub>,...,i<sub>M.dims−1</sub>), where 0≤ik<M.size[k], is computed as:
 
 > **addr(M<sub>i<sub>0</sub>,...,i<sub>M.dims−1</sub></sub>)=M.data+M.step[0]∗i<sub>0</sub>+M.step[1]∗i<sub>1</sub>+...+M.step[M.dims−1]∗<sub>i<sub>M.dims−1</sub></sub>**
 
