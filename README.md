@@ -76,9 +76,9 @@ addr(M<sub>i<sub>0</sub>,...,i<sub>M.dims−1</sub></sub>)=M.data+M.step[0]∗i<
 
 <sub>This is a subscript text</sub>
 In case of a 2-dimensional array, the above formula is reduced to:
-```
-addr(M_{i,j}) = M.data + M.step[0]*i + M.step[1]*j
-```
+
+addr(M<sub>i,j</sub>)=M.data+M.step[0]∗i+M.step[1]∗j
+
 ### 3. FaceDetector 
 It is a user-defined class which uses the *cv::dnn::Net* class and load weights from a pre-trained caffe model.The model has a constructor in which we will load the model weights. Additionally it has a method *std::vector<cv::Rect> detect_face_rectangles(const cv::Mat &frame)* that takes an input image and gives a vector of detected faces.In addition to the model, I have also saved:-
 + **input_image_width/height_** dimensions of the input image
