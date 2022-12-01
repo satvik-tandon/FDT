@@ -42,7 +42,7 @@ python3 -c "import cv2; print(cv2.__version__)"
 
 ## Building the Source Code
 
-Step 1: Clone the repository in the */root* directory and create a build folder
+Step 1: Clone the repository in the `/root` directory and create a build folder
 ```
 git clone https://github.com/satvik-tandon/FDT.git
 cd FDT
@@ -60,7 +60,7 @@ Step  3: An executible will be created. Run it.
 
 ## All-in-one Installation
 
-I have also attached a script file for running the full project from scratch. You may run it as follows in the */root*:
+I have also attached a script file for running the full project from scratch. You may run it as follows in the `/root`:
 ```
 bash fdt.sh
 ```
