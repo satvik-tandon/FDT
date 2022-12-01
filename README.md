@@ -1,4 +1,5 @@
-![1_enzZrRQ_EwtfJJKOffrcFg (1)](https://user-images.githubusercontent.com/67956852/205021308-9ccd4cd6-8214-49bf-b128-36903778f870.png)
+![360_F_287071353_WXFljgcyA6kHEniBIKCyqRYaviBZTS4p](https://user-images.githubusercontent.com/67956852/205021902-0a35372e-cec7-423c-a293-0a17df554ffd.jpg)
+
 
 
 #### “Computer vision and machine learning have really started to take off, but for most people, the whole idea of what a computer is seeing when it’s looking at an image is relatively obscure.” – Mike Kreiger ####
