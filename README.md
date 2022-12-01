@@ -92,7 +92,7 @@ It is a user-defined class which uses the `cv::dnn::Net` class and load weights 
 + `confidence_threshold_` the confidence threshold to use when detecting faces. The model will supply a confidence value for each detected face. Faces with a confidence value >= **confidence_threshold_** will be kept. All other faces are discarded.
 
 ### 4. Net
-This class allows to create and manipulate comprehensive artificial neural networks.Neural network is presented as directed acyclic graph (DAG), where vertices are Layer instances, and edges specify relationships between layers inputs and outputs.Each network layer has unique integer id and unique string name inside its network.
+The `Net` class allows to create and manipulate comprehensive artificial neural networks.Neural network is presented as directed acyclic graph (DAG), where vertices are Layer instances, and edges specify relationships between layers inputs and outputs.Each network layer has unique integer id and unique string name inside its network.
 
 ### 5. imshow()
 `imshow()` method is used to display an image in a window. The window automatically fits the image size.
