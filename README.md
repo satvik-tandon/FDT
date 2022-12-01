@@ -72,11 +72,11 @@ Class for video capturing from video files, image sequences or cameras.The class
 ### 2. Mat
 The class Mat represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i0,...,iM.dims−1), where 0≤ik<M.size[k], is computed as:
 
-> **addr(M<sub>i<sub>0</sub>,...,i<sub>M.dims−1</sub></sub>)=M.data+M.step[0]∗i<sub>0</sub>+M.step[1]∗i<sub>1</sub>+...+M.step[M.dims−1]∗<sub>iM.dims−1</sub>**
+`addr(M<sub>i<sub>0</sub>,...,i<sub>M.dims−1</sub></sub>)=M.data+M.step[0]∗i<sub>0</sub>+M.step[1]∗i<sub>1</sub>+...+M.step[M.dims−1]∗<sub>iM.dims−1</sub>`
 
 In case of a 2-dimensional array, the above formula is reduced to:
 
-> **addr(M<sub>i,j</sub>)=M.data+M.step[0]∗i+M.step[1]∗j **
+`addr(M<sub>i,j</sub>)=M.data+M.step[0]∗i+M.step[1]∗j`
 
 ### 3. FaceDetector 
 It is a user-defined class which uses the `cv::dnn::Net` class and load weights from a pre-trained caffe model.The model has a constructor in which we will load the model weights. Additionally it has a method `std::vector<cv::Rect> detect_face_rectangles(const cv::Mat &frame)` that takes an input image and gives a vector of detected faces.In addition to the model, I have also saved:-
