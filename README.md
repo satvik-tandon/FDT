@@ -1,4 +1,4 @@
-**“Computer vision and machine learning have really started to take off, but for most people, the whole idea of what a computer is seeing when it’s looking at an image is relatively obscure.” – Mike Kreiger**
+>“Computer vision and machine learning have really started to take off, but for most people, the whole idea of what a computer is seeing when it’s looking at an image is relatively obscure.” – Mike Kreiger
 
 In this project I have built a model which detects the face in video from webcam in realtime. I have built the project on C++ and opencv4. The versions used for CMake and openCV are 3.25.0 and 4.2.0 respectively. Using a pre-trained caffe model, it detects your face and draw a rectangle around it to indicate the face.
 
@@ -64,5 +64,46 @@ I have also attached a script file for running the full project from scratch. Yo
 ```
 bash fdt.sh
 ```
+### Classes and Methods Used 
+
+#### 1. VideoCapture 
+Class for video capturing from video files, image sequences or cameras.The class provides C++ API for capturing video from cameras or for reading video files and image sequences.
+
+#### 2. Mat
+The class Mat represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i0,...,iM.dims−1), where 0≤ik<M.size[k], is computed as:
+
+```
+addr(M_{i_0,...,i_{M.dims-1}}) = M.data + M.step[0]*i_0 + M.step[1]*i_1 + ... + M.step[M.dims-1]*i_{M.dims-1}
+```
+
+In case of a 2-dimensional array, the above formula is reduced to:
+```
+addr(M_{i,j}) = M.data + M.step[0]*i + M.step[1]*j
+```
+#### 3. FaceDetector 
+It is a user-defined class which uses the *cv::dnn::Net* class and load weights from a pre-trained caffe model.The model has a constructor in which we will load the model weights. Additionally it has a method *std::vector<cv::Rect> detect_face_rectangles(const cv::Mat &frame)* that takes an input image and gives a vector of detected faces.In addition to the model, I have also saved:-
+
+
+#### 4. imshow()
+imshow() method is used to display an image in a window. The window automatically fits the image size.
+
+#### 5. waitkey()
+waitkey() function allows users to display a window for given milliseconds or until any key is pressed. It takes time in milliseconds as a parameter and waits for the given time to destroy the window, if 0 is passed in the argument it waits till any key is pressed.
+
+#### 6. destroyAllWindows()
+destroyAllWindows() function allows users to destroy or close all windows at any time after exiting the script. If you have multiple windows open at the same time and you want to close then you would use this function. It doesn’t take any parameters and doesn’t return anything.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **THANKS FOR READING. :)**
