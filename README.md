@@ -64,12 +64,12 @@ I have also attached a script file for running the full project from scratch. Yo
 ```
 bash fdt.sh
 ```
-### Classes and Methods Used 
+## Classes and Methods Used 
 
-#### 1. VideoCapture 
+### 1. VideoCapture 
 Class for video capturing from video files, image sequences or cameras.The class provides C++ API for capturing video from cameras or for reading video files and image sequences.
 
-#### 2. Mat
+### 2. Mat
 The class Mat represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i0,...,iM.dims−1), where 0≤ik<M.size[k], is computed as:
 
 ```
@@ -80,26 +80,26 @@ In case of a 2-dimensional array, the above formula is reduced to:
 ```
 addr(M_{i,j}) = M.data + M.step[0]*i + M.step[1]*j
 ```
-#### 3. FaceDetector 
+### 3. FaceDetector 
 It is a user-defined class which uses the *cv::dnn::Net* class and load weights from a pre-trained caffe model.The model has a constructor in which we will load the model weights. Additionally it has a method *std::vector<cv::Rect> detect_face_rectangles(const cv::Mat &frame)* that takes an input image and gives a vector of detected faces.In addition to the model, I have also saved:-
 + **input_image_width/height_** dimensions of the input image
 + **scale_factor_** scaling factor when converting the image to a data blob
 + **mean_values_** the mean values for each channel the network was trained with. These values will be subtracted from the image when transforming the image to a data blob.
 + **confidence_threshold_** the confidence threshold to use when detecting faces. The model will supply a confidence value for each detected face. Faces with a confidence value >= **confidence_threshold_** will be kept. All other faces are discarded.
 
-#### 4. Net
+### 4. Net
 This class allows to create and manipulate comprehensive artificial neural networks.Neural network is presented as directed acyclic graph (DAG), where vertices are Layer instances, and edges specify relationships between layers inputs and outputs.Each network layer has unique integer id and unique string name inside its network.
 
-#### 5. imshow()
+### 5. imshow()
 imshow() method is used to display an image in a window. The window automatically fits the image size.
 
-#### 6. waitkey()
+### 6. waitkey()
 waitkey() function allows users to display a window for given milliseconds or until any key is pressed. It takes time in milliseconds as a parameter and waits for the given time to destroy the window, if 0 is passed in the argument it waits till any key is pressed.
 
-#### 7. destroyAllWindows()
+### 7. destroyAllWindows()
 destroyAllWindows() function allows users to destroy or close all windows at any time after exiting the script. If you have multiple windows open at the same time and you want to close then you would use this function. It doesn’t take any parameters and doesn’t return anything.
 
-#### 8. readNetFromCaffe()
+### 8. readNetFromCaffe()
 Reads a network model stored in Caffe framework's format.
 
 
@@ -114,4 +114,3 @@ Reads a network model stored in Caffe framework's format.
 
 
 
-**THANKS FOR READING. :)**
