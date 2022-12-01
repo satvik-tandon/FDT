@@ -72,7 +72,7 @@ Class for video capturing from video files, image sequences or cameras.The class
 ### 2. Mat
 The class Mat represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i0,...,iM.dims−1), where 0≤ik<M.size[k], is computed as:
 
-addr(M<sub>i0,...,iM.dims−1</sub>)=M.data+M.step[0]∗i0+M.step[1]∗i1+...+M.step[M.dims−1]∗iM.dims−1
+addr(M<sub>i<sub>0</sub>,...,iM.dims−1</sub>)=M.data+M.step[0]∗i0+M.step[1]∗i1+...+M.step[M.dims−1]∗iM.dims−1
 
 <sub>This is a subscript text</sub>
 In case of a 2-dimensional array, the above formula is reduced to:
