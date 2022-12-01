@@ -4,7 +4,7 @@ In this project I have built a model which detects the face in video from webcam
 
 
 
-##Installing OpenCV##
+### Installing OpenCV
 
 I have used parts of OpenCV and its OpenCV_contrib module. The most convenient way is by building OpenCV from source. I have used OpenCV version 4.2.0 on Ubuntu 22.04.
 
