@@ -87,15 +87,20 @@ It is a user-defined class which uses the *cv::dnn::Net* class and load weights 
 + **mean_values_** the mean values for each channel the network was trained with. These values will be subtracted from the image when transforming the image to a data blob.
 + **confidence_threshold_** the confidence threshold to use when detecting faces. The model will supply a confidence value for each detected face. Faces with a confidence value >= **confidence_threshold_** will be kept. All other faces are discarded.
 
-#### 4. imshow()
+#### 4. Net
+This class allows to create and manipulate comprehensive artificial neural networks.Neural network is presented as directed acyclic graph (DAG), where vertices are Layer instances, and edges specify relationships between layers inputs and outputs.Each network layer has unique integer id and unique string name inside its network.
+
+#### 5. imshow()
 imshow() method is used to display an image in a window. The window automatically fits the image size.
 
-#### 5. waitkey()
+#### 6. waitkey()
 waitkey() function allows users to display a window for given milliseconds or until any key is pressed. It takes time in milliseconds as a parameter and waits for the given time to destroy the window, if 0 is passed in the argument it waits till any key is pressed.
 
-#### 6. destroyAllWindows()
+#### 7. destroyAllWindows()
 destroyAllWindows() function allows users to destroy or close all windows at any time after exiting the script. If you have multiple windows open at the same time and you want to close then you would use this function. It doesn’t take any parameters and doesn’t return anything.
 
+#### 8. readNetFromCaffe()
+Reads a network model stored in Caffe framework's format.
 
 
 
