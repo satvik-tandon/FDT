@@ -82,7 +82,10 @@ addr(M_{i,j}) = M.data + M.step[0]*i + M.step[1]*j
 ```
 #### 3. FaceDetector 
 It is a user-defined class which uses the *cv::dnn::Net* class and load weights from a pre-trained caffe model.The model has a constructor in which we will load the model weights. Additionally it has a method *std::vector<cv::Rect> detect_face_rectangles(const cv::Mat &frame)* that takes an input image and gives a vector of detected faces.In addition to the model, I have also saved:-
-
++ **input_image_width/height_** dimensions of the input image
++ **scale_factor_** scaling factor when converting the image to a data blob
++ **mean_values_** the mean values for each channel the network was trained with. These values will be subtracted from the image when transforming the image to a data blob.
++ **confidence_threshold_** the confidence threshold to use when detecting faces. The model will supply a confidence value for each detected face. Faces with a confidence value >= **confidence_threshold_** will be kept. All other faces are discarded.
 
 #### 4. imshow()
 imshow() method is used to display an image in a window. The window automatically fits the image size.
