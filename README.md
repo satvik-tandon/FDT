@@ -40,7 +40,7 @@ python3 -c "import cv2; print(cv2.__version__)"
 
 
 
-**Building the Source Code**
+## **Building the Source Code**
 
 Step 1: Clone the repository in the */root* directory and create a build folder
 ```
