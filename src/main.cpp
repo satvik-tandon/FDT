@@ -11,7 +11,7 @@ int main()
         return 0;
 
     FaceDetector face_detector;
-    Mat frame;
+    Mat frame; //a n dimensional-array
     
     while (true)
     {
