@@ -4,7 +4,7 @@ In this project I have built a model which detects the face in video from webcam
 
 
 
-### **Installing OpenCV**
+## Installing OpenCV
 
 I have used parts of OpenCV and its OpenCV_contrib module. The most convenient way is by building OpenCV from source. I have used OpenCV version 4.2.0 on Ubuntu 22.04.
 
@@ -40,7 +40,7 @@ python3 -c "import cv2; print(cv2.__version__)"
 
 
 
-## **Building the Source Code**
+## Building the Source Code
 
 Step 1: Clone the repository in the */root* directory and create a build folder
 ```
