@@ -76,7 +76,7 @@ bash fdt.sh
 `VideoCapture` class is used for capturing video from video files, image sequences or cameras.The class provides C++ API for capturing video from cameras or for reading video files and image sequences.
 
 ### 2. Mat
-The class `Mat` represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i<sub>0</sub>,...,i<sub>M.dims−1</sub>), where 0≤ik<M.size[k], is computed as:
+The class `Mat` represents an n-dimensional dense numerical single-channel or multi-channel array. It can be used to store real or complex-valued vectors and matrices, grayscale or color images, voxel volumes, vector fields, point clouds, tensors, histograms. The data layout of the array M is defined by the array M.step[], so that the address of element (i<sub>0</sub>,...,i<sub>M.dims−1</sub>), where 0≤i<sub>k</sub><M.size[k], is computed as:
 
 > **addr(M<sub>i<sub>0</sub>,...,i<sub>M.dims−1</sub></sub>)=M.data+M.step[0]∗i<sub>0</sub>+M.step[1]∗i<sub>1</sub>+...+M.step[M.dims−1]∗<sub>i<sub>M.dims−1</sub></sub>**
 
